@@ -72,38 +72,7 @@
 <script>
     Validated = false;
 </script>
-<?php
-    $msg = "";
 
-    if (isset($_POST['submit'])) {
-        $full_name = $_POST['full_name'];
-        $email = $_POST['email'];
-
-        $password = $_POST['password'];
-        $cpassword = $_POST['cpassword'];
-
-        if (empty($full_name) || empty($email) || empty($password) || empty($cpassword)) {
-            $msg = "<div class='alert alert-danger'>All fields are required.</div>";
-        }else {
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $msg = "<div class='alert alert-danger'>Enter a valid email.</div>";
-            }else {
-                
-                    if ($password !== $cpassword) {
-                        $msg = "<div class='alert alert-danger'>Password and confirm password do not match.</div>";
-                    }else {
-                        $msg = "<div class='alert alert-success'>Register successfully completed.</div>";
-                        $full_name = "";
-                        $email = "";
-                     
-                        $password = "";
-                        $cpassword = "";
-                    }
-                }
-            }
-        }
-    
-?>
 <script>
     Validated = false;
 </script>
