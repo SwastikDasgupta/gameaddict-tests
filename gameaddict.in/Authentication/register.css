@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #00a8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Smartphone media queries*/
+@media screen and (min-width:320px) and (max-width:480px) {
+  .wrapper{
+   margin-top: 30px auto;
+  }
+}
+
+/*Ipads and tablets*/
+@media screen and (min-width:480px) and (max-width:768px) {
+ 
+  .wrapper{
+    margin-top: 40px auto;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1080px) {
+   
+  .wrapper{
+    margin-top: 60px auto;
+  }
+}
+
+.wrapper{
+  width: 330px;
+  padding: 2rem 0 1rem 0;
+  margin: 50px auto;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.71);
+  border-radius: 10px;
+
+
+  margin-top: 170px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+    margin: 10px 0;
+    border-left: 5px solid #00a8ff;
+    padding-left: 5px;
+    color: black;
+    font-size: 25px;
+}
+
+.wrapper .form {
+    margin: 10px 0;
+}
+
+.wrapper .form .input-field {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    margin-left: 10px;
+    padding-right: 20px;
+   
+}
+
+.wrapper .form .input-field .input-label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 15px;
+ 
+}
+
+.wrapper .form .input-field .input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s all ease;
+    border-radius: 10px;
+    
+}
+
+.wrapper .form .input-field .input:focus {
+    border-color: #00a8ff;
+}
+
+
+.wrapper .form .btn {
+    background: #00a8ff;
+    border: 1px solid #00a8ff;
+    width: 93%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
+    transition: 0.3s all ease;
+}
+
+.wrapper .form .btn:hover, .wrapper .form .btn:focus {
+    background: #0097e6;
+}
+
+.alert {
+    padding: 10px;
+    width: 93%;
+    margin-left: 10px;
+}
+
+.alert-danger {
+    background: #e84118;
+    color: white;
+}
+
+.alert-success {
+    background: #4cd137;
+    color: white;
+}
+
+.p{
+    position: relative;
+}
